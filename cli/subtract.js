@@ -1,6 +1,6 @@
 'use strict'
 
-const adjust = require('../lib/adjust')
+const { adjust } = require('lt-core')
 
 module.exports = async function subtract ({ getDb, cli }) {
   const [ , id, value ] = cli.input

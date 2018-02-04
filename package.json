@@ -1,12 +1,9 @@
 {
-  "name": "lt-timer",
+  "name": "lt-cli",
   "version": "1.0.0-beta.3",
   "description": "little timer",
-  "scripts": {
-    "test": "tap '**/_tests/*.js' --reporter spec"
-  },
   "bin": {
-    "lt": "./cli/index.js"
+    "lt": "index.js"
   },
   "author": "Ash",
   "license": "ISC",
@@ -14,26 +11,15 @@
   "dependencies": {
     "boxen": "^1.1.0",
     "chalk": "^2.3.0",
-    "charwise": "^2.0.0",
     "date-fns": "^1.29.0",
     "env-paths": "^1.0.0",
     "funstream": "^2.4.0",
     "inquirer": "^4.0.0",
-    "level": "^2.1.0",
-    "lodash.findlast": "^4.6.0",
-    "make-dir": "^1.1.0",
+    "lt-core": "^1.0.0",
     "meow": "^3.7.0",
-    "minigrate": "^1.0.1",
-    "parse-duration": "^0.1.1",
-    "path-exists": "^3.0.0",
-    "pretty-ms": "^3.1.0",
-    "through2": "^2.0.3",
-    "through2-filter": "^2.0.0",
-    "through2-map": "^3.0.0"
+    "pretty-ms": "^3.1.0"
   },
   "devDependencies": {
-    "shortid": "^2.2.8",
-    "standard": "^10.0.2",
-    "tap": "^11.0.1"
+    "standard": "^10.0.2"
   }
 }

@@ -6,7 +6,7 @@ const meow = require('meow')
 const envPaths = require('env-paths')
 const chalk = require('chalk')
 const paths = envPaths('lt')
-const getDb = require('../lib/get-db')(path.join(paths.data, 'db'))
+const getDb = require('lt-core').getDb(path.join(paths.data, 'db'))
 
 const commands = [
   'start',
@@ -43,7 +43,7 @@ if (!commandExists) {
 if (commandExists) {
   (async () => {
     try {
-      await require(`./${command}`)({ getDb, cli })
+      await require(`./cli/${command}`)({ getDb, cli })
     } catch (err) {
       logError(err.message)
     }

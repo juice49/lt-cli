@@ -1,7 +1,7 @@
 'use strict'
 
 const { prompt } = require('inquirer')
-const remove = require('../lib/remove')
+const { remove } = require('lt-core')
 
 module.exports = async function ({ getDb, cli }) {
   const id = cli.input[1]

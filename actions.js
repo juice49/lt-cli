@@ -1,9 +1,0 @@
-'use strict'
-
-module.exports = {
-  START_TIMER: 'START_TIMER',
-  STOP_TIMER: 'STOP_TIMER',
-  ADJUST_TIMER: 'ADJUST_TIMER',
-  REMOVE_EVENT: 'REMOVE_EVENT',
-  NOOP: 'NOOP'
-}

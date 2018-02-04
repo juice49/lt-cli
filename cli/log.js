@@ -5,8 +5,8 @@ const fun = require('funstream')
 const formatDate = require('date-fns/format')
 const chalk = require('chalk')
 const prettyMs = require('pretty-ms')
-const { START_TIMER, STOP_TIMER, ADJUST_TIMER } = require('../actions')
-const { parse } = require('../lib/event-key')
+const { START_TIMER, STOP_TIMER, ADJUST_TIMER } = require('lt-core').actions
+const { parse } = require('lt-core').eventKey
 
 const strings = {
   [START_TIMER]: chalk.green`[start]`,

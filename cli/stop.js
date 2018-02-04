@@ -1,6 +1,6 @@
 'use strict'
 
-const stop = require('../lib/stop')
+const { stop } = require('lt-core')
 
 module.exports = async function ({ getDb, cli }) {
   const actions = await stop({ getDb })

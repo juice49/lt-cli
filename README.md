@@ -1,20 +1,15 @@
-# `lt`
+# `lt-cli`
 
 <img src='http://i.imgur.com/e5KPnPp.gif' alt='lt demo' width='532' />
 
-`lt` is a small time tracking library and CLI. It is designed with extensibility
-in mind; either by embedding the library or extending the CLI.
+`lt-cli` is a small time tracking cli.
 
 - Each task must have a unique id.
 - One task can run at a time.
 
-`lt` uses [LevelDB](http://leveldb.org) for data storage. Right now it only works
-with node, but there are modules that enable the LevelDB API to be used with
-IndexedDB—so we could probably make it work in browsers, too.
+**Install `lt-cli`:**
 
-**Install `lt` CLI:**
-
-`npm i -g lt-timer`
+`npm i -g lt-cli`
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
@@ -39,7 +34,7 @@ provided, `lt` will resume the last timer that was stopped.
 
 `lt start foo`
 
-## lt stop
+## `lt` stop
 
 Stop the running timer.
 
@@ -90,6 +85,12 @@ If an id is provided, only the matching timer will be listed.
 ## `lt` log
 
 Event log for all timers.
+
+***
+
+## core
+
+[This is a cli for `lt-core`](https://github.com/juice49/lt-core).
 
 ***
 

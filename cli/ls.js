@@ -4,7 +4,7 @@ const { EOL } = require('os')
 const chalk = require('chalk')
 const prettyMs = require('pretty-ms')
 const boxen = require('boxen')
-const list = require('../lib/list')
+const { list } = require('lt-core')
 
 module.exports = async function ({ getDb, cli }) {
   const id = cli.input[1]
