@@ -8,6 +8,9 @@ const chalk = require('chalk')
 const paths = envPaths('lt')
 const getDb = require('lt-core').getDb(path.join(paths.data, 'db'))
 
+const time = require('timekeeper')
+time.freeze(new Date('2018-02-11T11:13'))
+
 const commands = [
   'start',
   'stop',

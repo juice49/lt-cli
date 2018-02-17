@@ -19,7 +19,8 @@
     "meow": "^3.7.0",
     "pretty-ms": "^3.1.0",
     "strip-ansi": "^4.0.0",
-    "text-table": "^0.2.0"
+    "text-table": "^0.2.0",
+    "timekeeper": "^2.0.0"
   },
   "devDependencies": {
     "standard": "^10.0.2"
