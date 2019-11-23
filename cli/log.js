@@ -37,7 +37,11 @@ function format ({ key, value }) {
     chalk.bold(id)
   ].join(' ')
 
-  return [ label, formatValue(parseValue(value)) ]
+  const formattedValue = event === ADJUST_TIMER
+    ? formatValue(parseValue(value))
+    : undefined
+
+  return [ label, formattedValue ]
     .filter(data => typeof data !== 'undefined')
     .join(' ') + EOL
 }
